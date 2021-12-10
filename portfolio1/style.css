@@ -1,0 +1,237 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  background-image: url('../resize/bg-coba.png');
+  background-size: cover;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* akhir reset */
+
+/* navbar */
+.navbar {
+  background-color: #0079bf;
+}
+
+.center-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.5s ease-in-out;
+  background-color: #101010;
+}
+
+.center-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+
+.nav-link {
+  font-size: 1em;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-link:hover {
+  color: lightblue;
+}
+
+.nav-logo {
+  font-size: 1.5em;
+  color: white;
+}
+/* akhir navbar */
+
+/* nama dan foto */
+.container-satu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem 0;
+  display: grid;
+  grid-template-areas: 'nama logo';
+}
+
+.nama {
+  grid-area: nama;
+}
+
+.nama h2 {
+  font-size: 2em;
+}
+.nama h3 {
+  font-size: 1.5em;
+}
+
+.logo-satu {
+  grid-area: logo;
+}
+
+.nama img {
+  height: 5px;
+  width: 20em;
+}
+
+.logo-satu {
+  position: relative;
+}
+
+.logo-satu img {
+  border-radius: 50%;
+}
+
+/* akhir nama dan foto */
+
+/* about me */
+.container-dua {
+  width: 60%;
+  margin: 1rem auto;
+}
+
+.about {
+  text-align: center;
+}
+
+.center-p {
+  display: flex;
+}
+
+/* akhir about me */
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+  /* navbar */
+  .center-menu {
+    position: absolute;
+    z-index: 1;
+    top: 3.8rem;
+    left: -100%;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .container {
+    transition: all 0.5s ease-in-out;
+  }
+
+  .container.active {
+    margin-top: 160px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .center-menu.active {
+    left: 0;
+    z-index: 1;
+  }
+
+  .nav-link {
+    color: #101010;
+  }
+
+  .nav-item {
+    margin: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* akhir navbar */
+
+@media screen and (max-width: 800px) {
+  /* nama and foto */
+  .container-satu {
+    display: grid;
+    grid-template-areas:
+      'logo'
+      'nama';
+    text-align: center;
+  }
+
+  .nama h2 {
+    font-size: 1.5em;
+  }
+
+  .nama h3:nth-child(1) {
+    margin-top: 0.5rem;
+  }
+
+  .nama h3 {
+    font-size: 1.3em;
+  }
+
+  .nama img {
+    display: none;
+  }
+
+  .logo-satu img {
+    width: 15rem;
+  }
+
+  /* akhir nama and foto */
+
+  /* about me */
+  .container-dua {
+    width: 90%;
+  }
+
+  .center-p {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .center-p p:nth-child(2) {
+    margin-top: 0.5rem;
+  }
+  /* akhir about me */
+}

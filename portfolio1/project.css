@@ -1,0 +1,95 @@
+/* project */
+.container-tiga {
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+}
+
+.card {
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  flex: 1;
+  background-color: #eee;
+}
+
+.card .header {
+  height: 150px;
+}
+
+.card .satu {
+  background-image: url(../resize/img2.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.card .dua {
+  background-image: url(../resize/img3.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.card .tiga {
+  background-image: url(../resize/img4.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.card .content {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.card.besar {
+  transform: scale(1.1);
+}
+
+.card .content button a {
+  text-decoration: none;
+  color: black;
+}
+
+.card .content a {
+  display: inline-block;
+  margin-top: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.card .content a:hover {
+  font-weight: bold;
+}
+
+/* akhir project */
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  .container-tiga {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    display: flex;
+  }
+
+  .card.besar {
+    transform: scale(1);
+  }
+
+  .card .satu,
+  .dua,
+  .tiga {
+    float: left;
+    width: 50%;
+  }
+
+  .card .content a {
+    padding-left: 2rem;
+    padding-top: 4rem;
+  }
+}
+
+/* akhir responsive */

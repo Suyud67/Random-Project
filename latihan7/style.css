@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to right, #6a85b6, #bac8e0);
+}
+
+.container {
+  width: 40%;
+  background-color: whitesmoke;
+  margin: 10rem auto;
+  padding: 0.6rem;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.input {
+  width: 60%;
+  padding: 5px;
+  margin: 5px;
+}
