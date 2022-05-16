@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo With Local Storage</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- judul -->
+    <header>
+      <h1>TODO APP</h1>
+    </header>
+    <!-- judul -->
+
+    <!-- input todo -->
+    <div class="container-todo">
+      <div class="header-formInput">
+        <h2>Input Your Todo</h2>
+      </div>
+      <form action="#" id="formTodo">
+        <div class="todo-input">
+          <label for="todo">Todo</label>
+          <input type="text" name="todo" id="todo" placeholder="what are you doing today?" autocomplete="off" required />
+        </div>
+        <div class="date-input">
+          <label for="dateTodo">Deadline</label>
+          <input type="date" name="dateTodo" id="dateTodo" required />
+        </div>
+        <input type="submit" value="submit" id="submit" />
+      </form>
+    </div>
+    <!-- akhir input todo -->
+
+    <!-- section unfinish todo  -->
+    <div class="container-unfinishTodo">
+      <div class="header-unfinishTodo">
+        <h2>Unfinish Todo</h2>
+      </div>
+      <div class="uncompleted-todos"></div>
+    </div>
+    <!-- akhir section unfinish todo -->
+
+    <!-- section finish todo  -->
+    <div class="container-finishTodo">
+      <div class="header-finishTodo">
+        <h2>Finished Todo</h2>
+      </div>
+      <div class="completed-todos"></div>
+    </div>
+    <!-- akhir section finish todo -->
+
+    <!-- footer -->
+    <footer>
+      <p><i class="fas fa-copyright"></i> Copyright 2022 Created With <i class="fas fa-heart" style="color: #ff4444"></i> By Suyud Setiawan</p>
+    </footer>
+    <!-- akhir footer -->
+
+    <!-- link untuk icon dari fontAwesome -->
+    <script src="https://kit.fontawesome.com/df3b53d485.js" crossorigin="anonymous"></script>
+
+    <!-- link script -->
+    <script src="js/localStorage.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

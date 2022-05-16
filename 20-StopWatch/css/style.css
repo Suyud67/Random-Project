@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* navbar */
+nav {
+  background-color: #00ffff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav h1 {
+  font-size: 2em;
+}
+/* akhir navbar */
+
+/* main content */
+.container {
+  width: 40%;
+  background-color: #666;
+  margin: 4rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 14px;
+}
+
+.timer {
+  margin-bottom: 1.4rem;
+}
+
+.batas,
+.hour,
+.min,
+.sec,
+.mil {
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.start,
+.reset,
+.stop {
+  margin: 1rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1.1em;
+  border-radius: 13px;
+}
+
+.start {
+  background-color: #1ce519;
+}
+
+.reset {
+  background-color: #1971e5;
+}
+
+.stop {
+  background-color: #e5192d;
+}
